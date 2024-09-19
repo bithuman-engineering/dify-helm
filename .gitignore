@@ -1,4 +1,5 @@
-*.tgz
+# *.tgz
 /.idea/*
 .vscode
 .DS_Store
+charts/dify/charts/*.tgz
