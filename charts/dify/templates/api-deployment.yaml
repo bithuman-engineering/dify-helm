@@ -70,6 +70,10 @@ spec:
             name: {{ template "dify.api.fullname" . }}
         - secretRef:
             name: {{ template "dify.api.fullname" . }}
+        {{- range .Values.api.secretEnvs }}
+        - secretRef:
+            name: {{ . }}
+        {{- end }}
         ports:
           - name: api
             containerPort: 5001

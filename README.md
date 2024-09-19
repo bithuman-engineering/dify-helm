@@ -20,7 +20,7 @@ helm install my-release dify/dify
 - [x] persistent storage
 - [ ] object storage
 - [x] weaviate
-- [ ] qdrant
+- [x] qdrant
 - [ ] milvus
 ### External components that can be used by this app with proper configuration
 - [x] redis
