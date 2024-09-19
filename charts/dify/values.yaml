@@ -172,6 +172,7 @@ worker:
   nodeSelector: {}
   affinity: {}
   tolerations: []
+  secretEnvs: []
   extraEnv:
   # Apply your own Environment Variables if necessary.
   # Variable defined here takes higher priority than those from `ConfigMap` generated given `.Values`

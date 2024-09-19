@@ -56,6 +56,10 @@ spec:
             name: {{ template "dify.worker.fullname" . }}
         - secretRef:
             name: {{ template "dify.worker.fullname" . }}
+        {{- range .Values.worker.secretEnvs }}
+        - secretRef:
+            name: {{ . }}
+        {{- end }}
         resources:
           {{- toYaml .Values.worker.resources | nindent 12 }}
         volumeMounts:
